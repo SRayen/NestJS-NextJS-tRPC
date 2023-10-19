@@ -1,8 +1,12 @@
+import ClientSide from "./ClientSide";
+import { trpc } from "./trpc";
 
-export default function Home() {
+export default async function Home() {
+  const response = await trpc.hello.query({ name: "Server" });
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>srayen test</div>
-    </main>
-  )
+    <div>
+      <div className="bg-red-700 h-10">I am Server Side : {response}</div>
+      <ClientSide />
+    </div>
+  );
 }

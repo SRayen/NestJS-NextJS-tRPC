@@ -11,7 +11,7 @@ export class TrpcRouter {
     hello: this.trpc.procedure
       .input(z.object({ name: z.string().optional() }))
       .query(({ input }) => {
-        return `Hello ${input.name ? input.name : 'User'}`;
+        return `Hello from ${input.name ? input.name : 'User'}`;
       }),
   });
   //add middleware (trpc) to Nest js to Expose the tRpC method
@@ -24,5 +24,3 @@ export class TrpcRouter {
 }
 
 export type AppRouter = TrpcRouter['appRouter'];
-
-
