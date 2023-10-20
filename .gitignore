@@ -3,6 +3,3 @@ dist
 build
 .env
 
-# next.js
-/.next/
-/out/
