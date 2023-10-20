@@ -7,7 +7,7 @@
 </div>
 
 ## Description :
-This monorepo contains a simple full-stack app built with **NestJS**, **NextJS**, and **tRPC**.
+This monorepo uses pnpm to manage multiple **NestJS**, **NextJS**, and **tRPC** projects in a single workspace.
 * It is fully type-safe and integrates the tRPC server directly into NestJS, giving you access to all of NestJS's features.
 * It also fits well with the NextJS 13 transition to server-side rendering and keeps the frontend and backend projects separate while seamlessly working together.
 
